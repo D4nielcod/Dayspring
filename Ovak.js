@@ -1,5 +1,5 @@
 var imageGotten=document.querySelector('.pic');
-imageArray=['Image11.jpg','Image20.jpg','Image3.webp'];
+imageArray=['ovak1.jpg','ovak2.jpg','ovak3.jpg'];
 var imageIndex=0;
 function imageChanger(){
   if (imageIndex<2){imageIndex++;
@@ -10,4 +10,14 @@ function imageChanger(){
                                      }
 }
 
-setInterval(imageChanger,3000);
+setInterval(imageChanger,5000);
+
+// Navigation Bar - Mobile viewport
+function myFunction() {
+  var x = document.getElementById("mynavBar");
+  if (x.className === "navBar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navBar";
+  }
+}

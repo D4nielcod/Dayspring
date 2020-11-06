@@ -1,15 +1,14 @@
 // Navigation Bar - Mobile viewport
 function myFunction() {
-  var x = document.getElementById("myTopnavsmall");
-  if (x.className === "topnavsmall") {
+  var x = document.getElementById("myNavBar");
+  if (x.className === "navBar") {
     x.className += " responsive";
   } else {
-    x.className = "topnavsmall";
+    x.className = "navBar";
   }
 }
 
 // Automatically Moving Pictures
-imageChangere('.picsmall');
 imageChangere('.pic')
 
 function imageChangere (classname){
@@ -118,6 +117,7 @@ setTimeout(myFunction4,14000);
 setTimeout(myFunction5,15000);
 
 // All text disappear
+setTimeout(underline,20000)
 setTimeout(myFunction1,20000);
 setTimeout(myFunction2,20000);
 setTimeout(myFunction3,20000);
@@ -132,6 +132,7 @@ setTimeout(myFunction4,24000);
 setTimeout(myFunction5,25000);
 
 // All text disappear
+setTimeout(underline,30000)
 setTimeout(myFunction1,30000);
 setTimeout(myFunction2,30000);
 setTimeout(myFunction3,30000);
@@ -144,3 +145,15 @@ setTimeout(myFunction2,32000);
 setTimeout(myFunction3,33000);
 setTimeout(myFunction4,34000);
 setTimeout(myFunction5,35000);
+
+// Hide Menu Bar
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("myNavBar").style.top = "0";
+  } else {
+    document.getElementById("myNavBar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
