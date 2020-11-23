@@ -9,33 +9,40 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,500&family=Rubik:wght@600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-<title>Home Page</title>
+<title>Home</title>
 </head>
 <body>
   <!-- Button that Leads Up -->
-  <a class="mytop" name="top"></a>
-  <a class="topButton" href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+  <a onclick="topFunction()" class="topButton" id="mytop" title="Go to top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
 
   <!-- Navigation Bar -->
   <div class="navBar" id="myNavBar">
     <a href="Dayspring.html" class="logo anchor">logo</a>
     <a href="Dayspring.html" class="home anchor">Home</a>
     <p class="divider">|</p>
-    <a href="#news" class="courses anchor">Courses</a>
+    <a href="#courses" class="courses anchor">Courses</a>
     <p class="divider">|</p>
-    <a href="#contact" class="past anchor">Past Questions</a>
+    <a href="#pastquestion" class="past anchor">Past Questions</a>
     <p class="divider">|</p>
-    <a href="#about" class="about anchor">About Us</a>
+    <a href="#about" class="about anchor">About</a>
     <p class="divider">|</p>
     <a href="#help" class="help anchor">Help</a>
     <p class="divider">|</p>
     <a href="#services" class="services anchor">Services</a>
     <p class="divider">|</p>
     <a href="#forum" class="forum anchor">Forum</a>
-    <a href="#log" class="log anchor">Log in</a>
+    <a href="#log" class="log anchor" onclick="myFunctiontoggle()">Log in</a>
     <p class="divider">|</p>
-    <a href="#sign" class="sign anchor">Sign Up</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    <a href="signUp.html" class="sign anchor" title="Register with Us">Sign Up</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction10()"><i class="fa fa-bars"></i></a>
+  </div>
+
+  <div class="loginBox" id="myloginBox">
+    <input class="email" type="email" placeholder="Email"> <br>
+    <input class="password" type="password" placeholder="Password"> <br>
+    <input class="box" type="checkbox"> <label class="remember">Remember Password</label> <br>
+    <a href="" class="login">Log In</a> <br>
+    <p class="agree"><a href="signUp.html" class="create">Create Account</a> | <a href="" class="create">Forgot Password?</a></p>
   </div>
 
   <!-- The Image -->
@@ -55,7 +62,7 @@
     <div class="column  cardone">
       <div class="card">
         <h3>Card 1</h3>
-        <p>Some texthfkyvzyjbfjfhncjhffdjddjdkjg fuafbue fubavu  ghgabvku </p>
+        <p>Some text</p>
         <p>Some text</p>
       </div>
     </div>
@@ -86,7 +93,19 @@
   </div>
 
   <!-- The footer of the Page -->
-  <footer></footer>
+  <footer>
+    <h2 class="dayspring">DAYSPRING TUTORS</h2>
+    <div class="bottomAnchors">
+      <a href="#" class="footerAnchor footerhome">Home</a>
+      <a href="#" class="footerAnchor">Courses</a>
+      <a href="#" class="footerAnchor">Past Questions</a>
+      <a href="#" class="footerAnchor">About</a>
+      <a href="#" class="footerAnchor">Help</a>
+      <a href="#" class="footerAnchor">Services</a>
+      <a href="#" class="footerAnchor">Forum</a>
+    </div>
+    <p class="copyright">© 2020 Dayspring Tutors. All Rights Reserved.</p>
+  </footer>
 
   <script src="Dayspring.js"></script>
 

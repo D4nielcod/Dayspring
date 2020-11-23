@@ -15,20 +15,25 @@ body{
 }
 
 .topButton{
+  display: none;
   position: fixed;
-  top: 550px;
-  left: 90%;
-  display: ;
-  z-index: 2;
-  font-size: 4rem;
-  text-decoration: none;
+  bottom: 20px;
+  right: 1px;
+  z-index: 99;
+  font-size: 2.5rem;
+  border: ;
+  border-radius: 100px;
+  outline: none;
+  background-color: inherit;
   color: #00BFFF;
-  opacity: 0.6;
-  background-color: ;
+  cursor: pointer;
+  padding: 1px;
+  border-radius: ;
+  opacity: 0.7;
 }
 
 .topButton:hover{
-  opacity: 1;
+  opacity: 1; transition: opacity 1s;
 }
 
 .icon{
@@ -47,15 +52,13 @@ a{
 .navBar{
   background-color: #00BFFF;
   height: 40px;
-  padding-top: 7px;
-  position: fixed;
-  top: 0; transition: top 1s;
+  padding-top: 7px; transition: padding-top 1s;
   width: 100%;
 }
 
 .navBar:hover{
   height: 45px; transition: height 1s;
-  padding-top: 9px; transition: padding-top 1s;
+  padding-top: 9px;
   width: 100%;
 }
 
@@ -84,6 +87,93 @@ a{
 .home, .log{
   margin-left: 11%;
 }
+
+.loginBox{
+  position: absolute;
+  border: 1px solid #000;
+  border-radius: 3px;
+  background-color: #00bfff;
+  width: 25%;
+  height: 300px;
+  margin-left: 75%;
+  line-height: 2%;
+  text-align: center;
+  display: none;
+}
+
+.email{
+  padding-left: 35px;
+  background-color: #fff;
+  font-size: 100%;
+  color: #000080;
+  width: 80%;
+  height: 50px;
+  border: none;
+  border-radius: 28px;
+  margin-top: 5%;
+}
+
+.password{
+  padding-left: 35px;
+  background-color: #fff;
+  color: #000080;
+  font-size: 100%;
+  width: 80%;
+  height: 50px;
+  border: none;
+  border-radius: 28px;
+  margin-top: 5%;
+}
+
+.box{
+  cursor: pointer;
+  margin-left: 40%;
+  margin-top: 3.1%;
+}
+
+.remember{
+  font-size: 70%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.login{
+  background-color: #fff;
+  border-radius: 28px;
+  border: 1px solid;
+  display: inline-block;
+  cursor: pointer;
+  color: #00bfff;
+  font-size: 100%;
+  margin-top: 2%;
+  padding:20px 20px;
+  text-decoration: none;
+  transition: color 1s;
+  transition: border 1s;
+}
+
+.login:hover{
+  color: #87ceeb;
+  border: 1px solid;
+  transition: color 1s;
+  transition: border 1s;
+}
+
+.agree{
+  color: #fff;
+  margin-top: 6%;
+  font-size: 85%;
+}
+
+.create{
+  text-decoration: none;
+  color: #fff; transition: color 1s;
+}
+
+.create:hover{
+  color: #87ceeb; transition: color 1s;
+}
+
 
 .pic{
   height: 650px;
@@ -154,22 +244,20 @@ a{
   background-color: #000080;
   font-family: 'Secular One',Arial;
   margin-bottom: 0;
-  margin-left: 38%;
+  margin-left: 42%;
   margin-top: 0.5%;
-  padding-bottom: 3px;
-  padding-left: 5px;
-  padding-right: 5px;
-  width: 23%;
+  font-size: 2rem;
+  width: 16%;
 }
 
 .tutors1{
   background-color: #000080;
   font-family: 'Secular One',Arial;
+  font-size: 2rem;
   margin-bottom: 0;
-  margin-left: 41%;
+  margin-left: 44%;
   margin-top: 0.5%;
-  padding-bottom: 3px;
-  width: 17%;
+  width: 12%;
 }
 
 .column{
@@ -196,16 +284,72 @@ a{
 
 footer{
   background-color: #f2f2f2;
-  color: #fff;
-  height: 300px;
-  margin-top: 1%;
+  color: #000;
+  height: 250px;
+  margin-top: 3%;
   width: 100%;
+  padding-top: 20px;
 }
 
-/* For Small Screens */
-@media screen and (max-width: 700px){
+.dayspring{
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.bottomAnchors{
+  margin-bottom: 2%;
+}
+
+.footerAnchor{
+  text-decoration: none;
+  color: #000080;
+  margin-left: 3%;
+}
+
+.footerAnchor:hover{
+  color: #FF0000; transition: color 1s;
+}
+
+.footerAnchor:active{
+  color: #00BFFF; transition: color 1s;
+}
+
+.footerhome{
+  margin-left: 23%;
+}
+
+.copyright{
+  text-align: center;
+  margin-top: 6%;
+}
+
+
+/* For Very Small Screens */
+@media screen and (max-width: 480px){
   a{
     display: inline;
+  }
+
+  .topButton{
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    font-size: 2.5rem;
+    border: ;
+    border-radius: 100px;
+    outline: none;
+    background-color: inherit;
+    color: #00BFFF;
+    cursor: pointer;
+    padding: 1px;
+    border-radius: ;
+    opacity: 0.7;
+  }
+
+  .topButton:hover{
+    opacity: 1; transition: opacity 1s;
   }
 
   .navBar a:not(:first-child), .divider{
@@ -270,11 +414,293 @@ footer{
     float: left;
     font-size: 150%;
     height: 50px;
-    padding-top: 2%;
+    padding-top: 2.5%;
     text-align: center;
     text-decoration: none;
-    margin-left: 70%;
+    margin-left: 65%;
+    width: 15%;
+  }
+
+  .navBar a.icon:hover{
+    background-color: #fff; transition: background-color 1s;
+    color: #000080; transition: color 1s;
+  }
+
+  .navBar a.icon:active{
+    color: #FF0000; transition: color 0.8s;
+  }
+
+  .navBar.responsive{
+    background-color: #fff;
+    margin-left: 20%;
+    position: relative;
+    width: 80%; transition: width 1s;
+    z-index: 3;
+  }
+
+  .navBar.responsive .icon{
+    background-color: #00BFFF;
+    color: #fff;
+    font-size: 150%;
+    height: 50px;
+    padding-top: 3%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 20%;
+  }
+
+  .navBar.responsive .icon:hover{
+    background-color: #f2f2f2; transition: background-color 1s;
+    color: #000080; transition: color 1s;
+  }
+
+  .navBar.responsive .icon:active{
+    background-color: #fff; transition: background-color 0.8s;
+    color: #FF0000; transition: color 0.8s;
+  }
+
+  .navBar.responsive .anchor{
+    color: #000080;
+    display: block;
+    float: none;
+    font-size: 130%;
+    height: 70px;
+    padding-right: 7%;
+    padding-top: 6%;
+    text-align: right;
+  }
+
+  .navBar.responsive .anchor:hover{
+    background-color: #00BFFF; transition: background-color 1s;
+    color: #fff; transition: color 1s;
+  }
+
+  .navBar.responsive .anchor:active{
+    background-color: #fff; transition: background-color 0.8s;
+    color: #FF0000; transition: color 0.8s;
+  }
+
+  .navBar.responsive .log, .navBar.responsive .sign{
+    border: none;
+    display: block;
+    float: none;
+    margin: 0;
+    height: 70px;
+    padding-top: 5%;
+  }
+
+  .navBar.responsive .logo, .navBar.responsive .logo:hover{
+    background-color: #fff;
+    border: none;
+    color: #000080;
+    font-size: 150%;
+    height: 50px;
+    padding-top: 2%;
+    text-align: left;
+    margin-left: -25%;
+    top: 0; transition: 1s;
+    width: 30%;
+  }
+
+  .navBar.responsive .home{
+    display: none;
+  }
+
+  .pic{
+    height: auto;
+    position: absolute;
+    top: 10.5%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .textjoin{
+    height: 300px;
+    padding-top: 12%;
+    text-align: center;
+  }
+
+  .join1{
+    background-color: inherit;
+    color: #00BFFF;
+    font-size: 3rem;
+    margin-bottom: 1%;
+    text-decoration: none;
+  }
+
+  .join1:hover, .join2:hover{
+    color: #87CEEB;
+  }
+
+  .join2{
+    background-color: inherit;
+    color: #00BFFF;
+    font-size: 3rem;
+    margin-bottom: 1%;
+    text-decoration: underline;
+  }
+
+  .winning1{
+    background-color: #FF0000;
+    color: #fff;
+    font-size: 25%;
+    margin-bottom: 0;
+    margin-left: 25%;
+    margin-top: 1%;
+    width: 50%;
+    padding:0;
+  }
+
+  .at1{
+    color: #00BFFF;
+    font-size: 1rem;
+    margin-bottom: 0.5%;
+    margin-left: 45%;
+    margin-top: 0.5%;
+    padding: 0;
     width: 10%;
+  }
+
+  .day1{
+    background-color: #000080;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-left: 31%;
+    margin-top: 0;
+    padding: 0;
+    width: 35%;
+  }
+
+  .tutors1{
+    background-color: #000080;
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 35%;
+    margin-top: 1%;
+    width: 28%;
+    padding:0;
+  }
+
+  .column {
+    display: block;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .cardone{
+    margin-top: 30%;
+  }
+
+  footer{
+  height: 300px;
+  }
+
+  .footerAnchor{
+  display: block;
+  margin-left: 10%;
+  margin-top: 2%;
+  }
+
+  .footerhome{
+  margin-left: 10%;
+  }
+
+  .copyright{
+  font-size: 0.8rem;
+  }
+}
+
+
+
+/* For Small Screen */
+@media screen and (min-width: 480px) and (max-width: 700px) {
+  a{
+    display: inline;
+  }
+
+  .topButton{
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    font-size: 2.5rem;
+    border: ;
+    border-radius: 100px;
+    outline: none;
+    background-color: inherit;
+    color: #00BFFF;
+    cursor: pointer;
+    padding: 1px;
+    border-radius: ;
+    opacity: 0.7;
+  }
+
+  .topButton:hover{
+    opacity: 1; transition: opacity 1s;
+  }
+
+  .navBar a:not(:first-child), .divider{
+    display: none;
+  }
+
+  .navBar .icon, .image, .navBar{
+      display: block;
+  }
+
+  .navBar, .navBar:hover{
+    background-color: #00BFFF;
+    padding: 0;
+    top: 0;
+    transition: top 3s;
+    height: 50px;
+    width: 100%; transition: width 0.9s;
+  }
+
+  .anchor{
+    background-color: #fff;
+    border-radius: 0;
+    color: #000000;
+    float: left;
+    font-family: 'Montserrat','Rubik',Arial;
+    font-size: 100%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .navBar a.logo{
+    margin: 0;
+    display: inline;
+    background-color: inherit;
+    color: #fff;
+    cursor: pointer;
+    font-size: 150%;
+    height: 50px;
+    width: 20%;
+    padding-left: 5%;
+    text-align: left;
+  }
+
+  .navBar a.home{
+    display: none;
+  }
+
+  .navBar a.icon{
+    background-color: #00BFFF;
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 150%;
+    height: 50px;
+    padding-top: 2.5%;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 65%;
+    width: 15%;
   }
 
   .navBar a.icon:hover{
@@ -325,7 +751,7 @@ footer{
     font-size: 130%;
     height: 70px;
     padding-right: 7%;
-    padding-top: 5%;
+    padding-top: 6%;
     text-align: right;
   }
 
@@ -358,7 +784,7 @@ footer{
     text-align: left;
     margin-left: -25%;
     top: 0; transition: 1s;
-    width: 24%;
+    width: 30%;
   }
 
   .navBar.responsive .home{
@@ -375,26 +801,26 @@ footer{
 
   .textjoin{
     height: 300px;
-    padding-top: 14%;
+    padding-top: 12%;
     text-align: center;
   }
 
   .join1{
     background-color: inherit;
     color: #00BFFF;
-    font-size: 200%;
+    font-size: 5rem;
     margin-bottom: 1%;
     text-decoration: none;
   }
 
-  .join1:hover{
+  .join1:hover, .join2{
     color: #87CEEB;
   }
 
   .join2{
     background-color: inherit;
     color: #00BFFF;
-    font-size: 200%;
+    font-size: 5rem;
     margin-bottom: 1%;
     text-decoration: underline;
   }
@@ -407,6 +833,7 @@ footer{
     margin-left: 19%;
     margin-top: 1%;
     width: 60%;
+    padding:0;
   }
 
   .at1{
@@ -414,7 +841,8 @@ footer{
     font-size: 50%;
     margin-bottom: 0.5%;
     margin-left: 45%;
-    margin-top: 0;
+    margin-top: 0.5%;
+    padding: 0;
     width: 10%;
   }
 
@@ -423,8 +851,9 @@ footer{
     color: #fff;
     font-size: 50%;
     margin-bottom: 0;
-    margin-left: 33%;
+    margin-left: 31%;
     margin-top: 0;
+    padding: 0;
     width: 35%;
   }
 
@@ -432,9 +861,10 @@ footer{
     background-color: #000080;
     color: #fff;
     font-size: 50%;
-    margin-left: 37%;
+    margin-left: 35%;
     margin-top: 1%;
     width: 28%;
+    padding:0;
   }
 
   .column {
@@ -444,7 +874,57 @@ footer{
   }
 
   .cardone{
-    margin-top: 50%;
+    margin-top: 30%;
+  }
+
+  footer{
+    background-color: #f2f2f2;
+    color: #000;
+    height: 420px;
+    margin-top: 5%;
+    width: 100%;
+    padding-top: 2px;
+  }
+
+  .dayspring{
+    text-align: left;
+    margin-left: 60px;
+    margin-bottom: 3%;
+    color: #00BFFF;
+    padding-top: 0;
+  }
+
+  .bottomAnchors{
+    margin-bottom: 2%;
+  }
+
+  .footerAnchor{
+    text-decoration: none;
+    color: #000080;
+    font-size: 0.9rem;
+    display: block;
+    margin-left: 0%;
+    margin-top: 0.5%;
+    padding: 10px;
+    padding-left: 60px;
+  }
+
+  .footerAnchor:hover{
+    color: #FF0000; transition: color 1s;
+  }
+
+  .footerAnchor:active{
+    color: #00BFFF; transition: color 1s;
+  }
+
+  .footerhome{
+    margin-left: 0%;
+  }
+
+  .copyright{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 2%;
   }
 }
 
@@ -452,6 +932,28 @@ footer{
 @media screen and (min-width: 700px) and (max-width: 1300px){
   a{
     display: inline;
+  }
+
+  .topButton{
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    font-size: 2.5rem;
+    border: ;
+    border-radius: 100px;
+    outline: none;
+    background-color: inherit;
+    color: #00BFFF;
+    cursor: pointer;
+    padding: 1px;
+    border-radius: ;
+    opacity: 0.7;
+  }
+
+  .topButton:hover{
+    opacity: 1; transition: opacity 1s;
   }
 
   .navBar a:not(:first-child), .divider{
@@ -475,7 +977,6 @@ footer{
     border-radius: 0;
     color: #000000;
     float: left;
-    font-family: 'Montserrat','Rubik',Arial;
     font-size: 100%;
     height: 50px;
     text-align: center;
@@ -612,7 +1113,7 @@ footer{
 
   .textjoin{
     height: 300px;
-    padding-top: 23%;
+    padding-top: 13%;
     text-align: center;
   }
 
@@ -624,7 +1125,7 @@ footer{
     text-decoration: none;
   }
 
-  .join1:hover{
+  .join1:hover, .join2{
     color: #87CEEB;
   }
 
@@ -681,11 +1182,43 @@ footer{
     width: 100%;
   }
 
-  /* .card{
-    border: none;
-  } */
-
   .cardone{
     margin-top: 60%;
+  }
+
+  footer{
+    background-color: #f2f2f2;
+    color: #000;
+    height: 200px;
+    margin-top: 3%;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .dayspring{
+    text-align: left;
+    margin-left: 8%;
+    margin-bottom: 3%;
+    color: #00BFFF;
+  }
+
+  .bottomAnchors{
+    text-align: left;
+  }
+
+  .footerAnchor{
+    text-decoration: none;
+    color: #000080;
+    margin-left: 1%;
+  }
+
+  .footerhome{
+    margin-left: 8%;
+  }
+
+  .copyright{
+    text-align: left;
+    margin-left: 8%;
+    margin-top: 4%;
   }
 }
