@@ -1,14 +1,12 @@
-// Navigation Bar - Mobile viewport
+// NAVIGATION BAR - MOBILE VIEW
 function myFunction10() {
   var x = document.getElementById("myNavBar");
   if (x.className === "navBar") {
     x.className += " responsive";
-  } else {
-    x.className = "navBar";
-  }
+  } else {x.className = "navBar";}
 }
 
-// Automatically Moving Pictures
+// PICTURE SLIDE
 imageChangere('.pic')
 
 function imageChangere (classname){
@@ -29,8 +27,8 @@ function imageChangere (classname){
   setInterval(imageChanger,5000);
 }
 
-// Text Visiblity
-// function one
+// TEXT VISIBILITY
+// Function One
 function myFunction1() {
     var x = document.getElementById("joinOne");
 
@@ -42,7 +40,7 @@ function myFunction1() {
 }
 setTimeout(myFunction1,1000);
 
-//underline
+// Underline
 function underline() {
     var x = document.getElementById("joinOne");
 
@@ -54,7 +52,7 @@ function underline() {
 }
 setInterval(underline,1000);
 
-// function two
+// Function Two
 function myFunction2() {
     var x = document.getElementById("winningOne");
 
@@ -66,7 +64,7 @@ function myFunction2() {
 }
 setTimeout(myFunction2,2000);
 
-// function three
+// Function Three
 function myFunction3() {
     var x = document.getElementById("atOne");
 
@@ -78,7 +76,7 @@ function myFunction3() {
 }
 setTimeout(myFunction3,3000);
 
-// function four
+// Function Four
 function myFunction4() {
     var x = document.getElementById("dayOne");
 
@@ -90,7 +88,7 @@ function myFunction4() {
 }
 setTimeout(myFunction4,4000);
 
-// function five
+// Function Five
 function myFunction5() {
     var x = document.getElementById("tutorsOne");
 
@@ -102,70 +100,33 @@ function myFunction5() {
 }
 setTimeout(myFunction5,5000);
 
-// All text disappear
-setTimeout(myFunction1,10000);
-setTimeout(myFunction2,10000);
-setTimeout(myFunction3,10000);
-setTimeout(myFunction4,10000);
-setTimeout(myFunction5,10000);
+// All Texts Disappear
+setTimeout(myFunction1,10000); setTimeout(myFunction2,10000); setTimeout(myFunction3,10000); setTimeout(myFunction4,10000); setTimeout(myFunction5,10000);
+//Code Text Visibility Repeats again
+setTimeout(myFunction1,11000); setTimeout(myFunction2,12000); setTimeout(myFunction3,13000); setTimeout(myFunction4,14000); setTimeout(myFunction5,15000);
+// All Texts Disappear
+setTimeout(underline,20000); setTimeout(myFunction1,20000); setTimeout(myFunction2,20000); setTimeout(myFunction3,20000); setTimeout(myFunction4,20000); setTimeout(myFunction5,20000);
+//Code Text Visibility Repeats again
+setTimeout(myFunction1,21000); setTimeout(myFunction2,22000); setTimeout(myFunction3,23000); setTimeout(myFunction4,24000); setTimeout(myFunction5,25000);
+// All Texts Disappear
+setTimeout(underline,30000); setTimeout(myFunction1,30000); setTimeout(myFunction2,30000); setTimeout(myFunction3,30000); setTimeout(myFunction4,30000); setTimeout(myFunction5,30000);
 //Code Text Visiblity Repeats again
-setTimeout(myFunction1,11000);
-setTimeout(myFunction2,12000);
-setTimeout(myFunction3,13000);
-setTimeout(myFunction4,14000);
-setTimeout(myFunction5,15000);
-// All text disappear
-setTimeout(underline,20000)
-setTimeout(myFunction1,20000);
-setTimeout(myFunction2,20000);
-setTimeout(myFunction3,20000);
-setTimeout(myFunction4,20000);
-setTimeout(myFunction5,20000);
-//Code Text Visiblity Repeats again
-setTimeout(myFunction1,21000);
-setTimeout(myFunction2,22000);
-setTimeout(myFunction3,23000);
-setTimeout(myFunction4,24000);
-setTimeout(myFunction5,25000);
-// All text disappear
-setTimeout(underline,30000)
-setTimeout(myFunction1,30000);
-setTimeout(myFunction2,30000);
-setTimeout(myFunction3,30000);
-setTimeout(myFunction4,30000);
-setTimeout(myFunction5,30000);
-//Code Text Visiblity Repeats again
-setTimeout(myFunction1,31000);
-setTimeout(myFunction2,32000);
-setTimeout(myFunction3,33000);
-setTimeout(myFunction4,34000);
-setTimeout(myFunction5,35000);
+setTimeout(myFunction1,31000); setTimeout(myFunction2,32000); setTimeout(myFunction3,33000); setTimeout(myFunction4,34000); setTimeout(myFunction5,35000);
 
-
-// Hide Button
+// GO-tO-TOP BUTTON
 var mybutton = document.getElementById("mytop");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
     mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+  } else {mybutton.style.display = "none";}
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-// To Toggle the Visiblity of the Login Box
+// THE LOG IN BOX
 function myFunctiontoggle() {
   var x = document.getElementById("myloginBox");
   if (x.style.display === "none") {
     x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+  } else {x.style.display = "none";}
 }

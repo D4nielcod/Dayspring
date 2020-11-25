@@ -12,8 +12,9 @@
 <title>Home</title>
 </head>
 <body>
-  <!-- Button that Leads Up -->
-  <a onclick="topFunction()" class="topButton" id="mytop" title="Go to top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+  <!-- Go-to-Top Button -->
+  <a class="mytop" name="top"></a>
+  <a class="topButton" id="mytop" href="#top" title="Go to Top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
 
   <!-- Navigation Bar -->
   <div class="navBar" id="myNavBar">
@@ -31,12 +32,14 @@
     <a href="#services" class="services anchor">Services</a>
     <p class="divider">|</p>
     <a href="#forum" class="forum anchor">Forum</a>
-    <a href="#log" class="log anchor" onclick="myFunctiontoggle()">Log in</a>
+    <a href="#log" class="log anchor" onclick="myFunctiontoggle()">Log In</a>
+    <a href="#log" class="log2 anchor">Log In</a>
     <p class="divider">|</p>
     <a href="signUp.html" class="sign anchor" title="Register with Us">Sign Up</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction10()"><i class="fa fa-bars"></i></a>
   </div>
 
+  <!-- Log In Box -->
   <div class="loginBox" id="myloginBox">
     <input class="email" type="email" placeholder="Email"> <br>
     <input class="password" type="password" placeholder="Password"> <br>
@@ -92,7 +95,7 @@
     </div>
   </div>
 
-  <!-- The footer of the Page -->
+  <!-- The Footer of the Page -->
   <footer>
     <h2 class="dayspring">DAYSPRING TUTORS</h2>
     <div class="bottomAnchors">
