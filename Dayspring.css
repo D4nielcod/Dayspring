@@ -17,16 +17,16 @@ a:active{cursor:progress;}
 
 .divider{color:#fff; display:inline;}
 
-.navBar{background-color:#00bfff; height:40px; padding-top:7px; transition:padding-top 1s; width:100%;}
-.navBar:hover{height:45px; padding-top:9px; transition:height 1s; width:100%;}
+.navBar{background-color:#00bfff; height:50px; padding-top:15px; transition:padding-top 1s; width:100%;}
+.navBar:hover{height:55px; padding-top:17px; transition:height 1s; width:100%;}
 
-.anchor{background-color:inherit; border-radius:3px; color:#fff; font-size:108%; padding:7px 7px; text-decoration:none;}
+.anchor{background-color:inherit; border-radius:3px; color:#fff; font-size:110%; padding:7px 7px; text-decoration:none;}
 .anchor:hover{color:#000080; transition:color 1s;}
 .anchor:active{color:#ff0000; transition:color 0.8s;}
 
-.logo{margin-left:8%; cursor:pointer; display:inline;}
+.logo{background-image: url('dummyLogo.jpg'); border-radius:30px; cursor:pointer; left:8%; padding:25px; position:absolute; top:0px;}
 
-.home, .log{margin-left:11%;}
+.home, .log{margin-left:17%;}
 
 .log2{display:none;}
 
@@ -104,30 +104,30 @@ footer{background-color:#f2f2f2; color:#000; height:250px; margin-top:3%; width:
 
   .anchor{background-color:#fff; border-radius:0; color:#000; float:left; height:50px; text-align:center;}
 
-  .navBar a.logo{background-color:inherit; color:#fff; font-size:150%; height: 50px; margin:0; padding-left:5%; text-align:left; width:20%;}
+  .navBar a.logo{left:8%; padding:24px; top:1.5px;}
 
-  .navBar a.icon{background-color:#00bfff; color:#fff; display:block; float:left; font-size:150%; height:50px; padding-top:2.5%; text-align:center; text-decoration:none; margin-left:65%; width:15%;}
+  .navBar a.icon{background-color:#00bfff; color:#fff; display:block; float:left; font-size:150%; height:50px; margin-left:85%; padding-top:2.5%; text-align:center; text-decoration:none; width:15%;}
   .navBar a.icon:hover{background-color:#fff; color:#000080; transition:background-color 1s; transition:color 1s;}
   .navBar a.icon:active{color:#ff0000; transition:color 0.8s;}
 
   /* The Responsive Navigation Bar */
   .navBar.responsive{background-color:#fff; margin-left:20%; position:relative; transition:width 1s; width:80%; z-index:3;}
 
-  .navBar.responsive .icon{background-color:#00bfff; color:#fff; font-size:150%; height:50px; padding-top:3%; position:absolute; right:0; text-align:center; top:0; width:20%;}
-  .navBar.responsive .icon:hover{background-color:#f2f2f2; color:#000080; transition:background-color 1s; transition:color 1s;}
+  .navBar.responsive .icon{background-color:#f2f2f2; color:#000080; font-size:150%; height:50px; padding-top:3%; position:absolute; right:0; text-align:center; top:0; width:20%;}
+  .navBar.responsive .icon:hover{background-color:#00bfff; color:#fff; transition:background-color 1s; transition:color 1s;}
   .navBar.responsive .icon:active{background-color:#fff; color:#ff0000; transition:background-color 0.8s; transition:color 0.8s;}
 
   .navBar.responsive .anchor{color:#000080; display:block; float:none; font-size:130%; height:70px; padding-right:7%; padding-top:6%; text-align:right;}
   .navBar.responsive .anchor:hover{background-color:#00bfff; color:#fff; transition:background-color 1s; transition:color 1s;}
   .navBar.responsive .anchor:active{background-color:#fff; color:#ff0000; transition:background-color 0.8s; transition:color 0.8s;}
 
-  .navBar.responsive .log{display: none;}
+  .navBar.responsive .log{display:none;}
 
   .navBar.responsive .log2, .navBar.responsive .sign{border:none; display:block; float:none; margin:0; height:70px; padding-top:5%;}
 
-  .navBar.responsive .logo, .navBar.responsive .logo:hover{background-color:#fff; border:none; color:#000080; font-size:150%; height:50px; padding-top:2%; text-align:left; margin-left:-25%; top:0; width:30%;}
+  .navBar.responsive .logo, .navBar.responsive .logo:hover{margin-left:-30%;}
 
-  .navBar.responsive .home{display:none;}
+  .navBar.responsive .home, .navBar.responsive .home:hover{background-color:#f2f2f2; color:#f2f2f2; height:50px; margin-left:-50%;}
 
   /* The Image */
   .pic{height:auto; top:10.5%;}
@@ -171,37 +171,37 @@ footer{background-color:#f2f2f2; color:#000; height:250px; margin-top:3%; width:
 
   .navBar .icon, .image, .navBar{display:block;}
 
-  .navBar, .navBar:hover{height:50px; padding:0; transition:width 0.9s;}
+  .navBar, .navBar:hover{height:55px; padding:0; transition:width 0.9s;}
 
   .anchor{background-color:#fff; border-radius:0; color:#000; float:left; height:50px; text-align:center;}
 
-  .navBar a.logo{background-color:inherit; color:#fff; font-size:150%; height:50px; margin:0; padding-left:5%; text-align:left; width:20%;}
+  .navBar a.logo{left:8%; padding:24px; top:4px;}
 
-  .navBar a.icon{background-color:#00bfff; color:#fff; display:block; float:left; font-size:150%; height:50px; margin-left:65%; padding-top:2.5%; text-align:center; text-decoration:none; width:15%;}
+  .navBar a.icon{background-color:#00bfff; color:#fff; display:block; float:left; font-size:150%; height:55px; margin-left:85%; padding-top:13px; text-align:center; text-decoration:none; width:15%;}
   .navBar a.icon:hover{background-color:#fff; color:#000080; transition:background-color 1s; transition:color 1s;}
   .navBar a.icon:active{color:#ff0000; transition:color 0.8s;}
 
   /* The Responsive Navigation Bar */
-  .navBar.responsive{background-color:#fff; margin-left:20%; position:relative; transition:width 1s; width:80%; z-index:3;}
+  .navBar.responsive{background-color:#fff; height:55px; margin-left:20%; position:relative; transition:width 1s; width:80%; z-index:3;}
 
-  .navBar.responsive .icon{background-color:#00bfff; color:#fff; font-size:150%; height:50px; padding-top:3%; position:absolute; right:0; text-align:center; top:0; width:20%;}
-  .navBar.responsive .icon:hover{background-color:#f2f2f2; color:#000080; transition:background-color 1s; transition:color 1s;}
+  .navBar.responsive .icon{background-color:#f2f2f2; color:#000080; font-size:150%; height:55px; padding-top:13px; position:absolute; right:0; text-align:center; top:0; width:20%;}
+  .navBar.responsive .icon:hover{background-color:#00bfff; color:#fff; transition:background-color 1s; transition:color 1s;}
   .navBar.responsive .icon:active{background-color:#fff; color:#ff0000; transition:background-color 0.8s; transition:color 0.8s;}
 
   .navBar.responsive .anchor{color:#000080; display:block; float:none; font-size:130%; height:70px; padding-right:7%; padding-top:6%; text-align:right;}
   .navBar.responsive .anchor:hover{background-color:#00bfff; color:#fff; transition:background-color 1s; transition:color 1s;}
   .navBar.responsive .anchor:active{background-color:#fff; color:#ff0000; transition:background-color 0.8s; transition:color 0.8s;}
 
-  .navBar.responsive .log{display: none;}
+  .navBar.responsive .log{display:none;}
 
   .navBar.responsive .log2, .navBar.responsive .sign{border:none; display:block; float:none; height:70px; margin:0; padding-top:5%;}
 
-  .navBar.responsive .logo, .navBar.responsive .logo:hover{background-color:#fff; border:none; color:#000080; font-size:150%; height:50px; padding-top:2%; text-align:left; margin-left:-25%; top:0; width:30%;}
+  .navBar.responsive .logo, .navBar.responsive .logo:hover{margin-left:-25%;}
 
-  .navBar.responsive .home{display:none;}
+  .navBar.responsive .home, .navBar.responsive .home:hover{background-color:#f2f2f2; color:#f2f2f2; height:55px; margin-left:-50%;}
 
   /* The Image */
-  .pic{height:auto; top:9%;}
+  .pic{height:auto; top:9.9%;}
 
   .textjoin{height:300px; padding-top:10%;}
 
@@ -244,21 +244,21 @@ footer{background-color:#f2f2f2; color:#000; height:250px; margin-top:3%; width:
 
   .navBar .icon, .image, .navBar{display:block;}
 
-  .navBar, .navBar:hover{height:50px; padding:0; transition:width 0.1s;}
+  .navBar, .navBar:hover{height:55px; padding:0; transition:width 0.1s;}
 
   .anchor{background-color:#fff; border-radius:0; color:#000; float:left; height:50px; text-align:center;}
 
-  .navBar a.logo{background-color:inherit; color:#fff; font-size:150%; height:50px; margin-left:5%; margin-top:0; padding-left:1%; text-align:left; width:8%;}
+  .navBar a.logo{left:8%; padding:25px; top:2px;}
 
-  .navBar a.icon{background-color:#00bfff; color:#fff; display:block; float:left; font-size:150%; height:50px; margin-left:77%; padding-top:1%; text-align:center; text-decoration:none;  width:10%;}
+  .navBar a.icon{background-color:#00bfff; color:#fff; display:block; float:left; font-size:150%; height:55px; margin-left:90%; padding-top:13px; text-align:center; text-decoration:none; width:10%;}
   .navBar a.icon:hover{background-color:#fff; color:#000080; transition:background-color 1s; transition:color 1s;}
   .navBar a.icon:active{color:#ff0000; transition:color 0.8s;}
 
   /* The Responsive Navigation Bar */
-  .navBar.responsive{background-color:#fff; margin-left:20%; position:relative; transition:width 1s; width:80%; z-index:3;}
+  .navBar.responsive{background-color:#f2f2f2; margin-left:20%; height:55px; position:relative; transition:width 1s; width:80%; z-index:3;}
 
-  .navBar.responsive .icon{background-color:#00bfff; color:#fff; font-size:150%; height:50px; padding-top:1%; position:absolute; right:0; text-align:center; top:0; width:13%;}
-  .navBar.responsive .icon:hover{background-color:#f2f2f2; color:#000080; transition:background-color 1s; transition:color 1s;}
+  .navBar.responsive .icon{background-color:#f2f2f2; color:#000080; font-size:150%; height:55px; padding-top:13px; position:absolute; right:0; text-align:center; top:0; width:13%;}
+  .navBar.responsive .icon:hover{background-color:#00bfff; color:#fff; transition:background-color 1s; transition:color 1s;}
   .navBar.responsive .icon:active{background-color:#fff; color:#ff0000; transition:background-color 0.8s; transition:color 0.8s;}
 
   .navBar.responsive .anchor{color:#000080; display:block; float:none; font-size:130%; height:70px; padding-top:3%; padding-right:5%; text-align:right;}
@@ -267,14 +267,14 @@ footer{background-color:#f2f2f2; color:#000; height:250px; margin-top:3%; width:
 
   .navBar.responsive .log{display:none;}
 
-  .navBar.responsive .log2, .navBar.responsive .sign{border:none; display: block; float:none; height:70px; margin:0; padding-top:2%;}
+  .navBar.responsive .log2, .navBar.responsive .sign{border:none; display:block; float:none; height:70px; margin:0; padding-top:2%;}
 
-  .navBar.responsive .logo, .navBar.responsive .logo:hover{background-color:#e5fbfe; border:none; color:#000; font-size:150%; height:50px; margin-left:-20%; padding-top:1%; padding-left:1%; text-align:left; top:0; transition:1s; width:10%;}
+  .navBar.responsive .logo, .navBar.responsive .logo:hover{margin-left:-25%;}
 
-  .navBar.responsive .home{display:none;}
+  .navBar.responsive .home, .navBar.responsive .home:hover{background-color:#f2f2f2; color:#f2f2f2; height:55px; margin-left:-50%;}
 
   /* The Image */
-  .pic{height:auto; top:9%;}
+  .pic{height:auto; top:9.9%;}
 
   .textjoin{height:300px; padding-top:13%; text-align:center;}
 
@@ -288,7 +288,7 @@ footer{background-color:#f2f2f2; color:#000; height:250px; margin-top:3%; width:
 
   .day1{font-size:60%; margin-left:35%; width:30%;}
 
-  .tutors1{font-size: 60%; margin-left:40%; margin-top:1%; width:21%;}
+  .tutors1{font-size:60%; margin-left:40%; margin-top:1%; width:21%;}
 
   /* The Cards */
   .column{display:block; margin-bottom:3%; width:100%;}
