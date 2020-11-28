@@ -20,17 +20,17 @@ a:active{cursor:progress;}
 .navBar{background-color:#00bfff; height:50px; padding-top:15px; transition:padding-top 1s; width:100%;}
 .navBar:hover{height:55px; padding-top:17px; transition:height 1s; width:100%;}
 
-.anchor{background-color:inherit; border-radius:3px; color:#fff; font-size:110%; padding:7px 7px; text-decoration:none;}
+.anchor{background-color:inherit; border-radius:3px; color:#fff; font-size:115%; padding:7px 7px; text-decoration:none; transition:color 1s;}
 .anchor:hover{color:#000080; transition:color 1s;}
 .anchor:active{color:#ff0000; transition:color 0.8s;}
 
 .logo{background-image: url('dummyLogo.jpg'); border-radius:30px; cursor:pointer; left:8%; padding:25px; position:absolute; top:0px;}
 
-.home, .log{margin-left:17%;}
+.home, .log{margin-left:16%;}
 
 .log2{display:none;}
 
-/* The Log In Box */
+/* The Log-In Box */
 .loginBox{background-color:#00bfff; border:1px solid #000; border-radius:3px; display:none; height:auto; line-height:2%; margin-left:75%; position:absolute; text-align:center; width:25%;}
 
 .email{background-color:#fff; border:none; border-radius:30px; color:#000080; font-size:100%; height:50px; margin-top:5%; padding-left:35px; width:80%;}
@@ -75,7 +75,7 @@ a:active{cursor:progress;}
 
 .card{background-color:inherit; border:1px solid; border-radius:3px; color:#000; height:300px; padding:16px; text-align:center;}
 
-/* The Footer of the Page */
+/* Footer */
 footer{background-color:#f2f2f2; color:#000; height:250px; margin-top:3%; width:100%; padding-top:20px;}
 
 .dayspring{color:#00bfff; margin-bottom:3%; text-align:center;}
@@ -151,7 +151,7 @@ footer{background-color:#f2f2f2; color:#000; height:250px; margin-top:3%; width:
 
   .cardone{margin-top:30%;}
 
-  /* The Footer of the Page */
+  /* Footer */
   footer{height:300px; margin-top:5%; padding-top:3px;}
 
   .footerAnchor{display:block; margin-left:10%; margin-top:2%;}
@@ -222,7 +222,7 @@ footer{background-color:#f2f2f2; color:#000; height:250px; margin-top:3%; width:
 
   .cardone{margin-top:30%;}
 
-  /* The Footer of the Page */
+  /* Footer */
   footer{height:420px; margin-top:5%; padding-top:2px;}
 
   .dayspring{margin-left:60px; text-align:left;}
@@ -295,7 +295,7 @@ footer{background-color:#f2f2f2; color:#000; height:250px; margin-top:3%; width:
 
   .cardone{margin-top:45%;}
 
-  /* The Footer of the Page */
+  /* Footer */
   footer{height:200px; margin-top:3%; padding-top:20px;}
 
   .dayspring{margin-left:8%; text-align:left;}

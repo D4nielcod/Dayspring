@@ -10,26 +10,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,500&family=Rubik:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-    <title>SignUp</title>
+    <title>Sign Up</title>
   </head>
-
   <body>
-    <div class="header"><h1 class="day">DAYSPRING TUTORS</h1></div>
+    <!-- Navigation Bar -->
+    <a href="#back" class="back" title="Go Back">Back</a>
+    <div class="navBar" id="myNavBar">
+      <a href="Dayspring.html" class="logo"></a>
+      <a href="Dayspring.html" class="home anchor">Home</a>
+      <p class="divider">|</p>
+      <a href="#courses" class="courses anchor">Courses</a>
+      <p class="divider">|</p>
+      <a href="#pastquestion" class="past anchor">Past Questions</a>
+      <p class="divider">|</p>
+      <a href="#about" class="about anchor">About</a>
+      <p class="divider">|</p>
+      <a href="#help" class="help anchor">Help</a>
+      <p class="divider">|</p>
+      <a href="#services" class="services anchor">Services</a>
+      <p class="divider">|</p>
+      <a href="#forum" class="forum anchor">Forum</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction10()"><i class="fa fa-bars"></i></a>
+    </div>
 
+    <!-- Sign-Up Box -->
     <div class="signupBox">
-      <p class="sign">Sign Up</p>
-      <input class="username" type="text" placeholder="Username"> <br>
-      <select class="level">
+      <p class="signUp">Sign Up</p>
+      <input class="username input" type="text" placeholder="Username"> <br>
+      <select class="level input">
         <option>Select Learning Level</option>
         <option>100lvl</option>
         <option>200lvl</option>
         <option>300lvl</option>
+        <option>400lvl</option>
+        <option>500lvl</option>
       </select> <br>
-      <input class="email" type="email" placeholder="Email"> <br>
-      <input class="password" type="password" placeholder="Password"> <br>
-      <a href="" class="create">Create Account</a> <br>
+      <input class="email input" type="email" placeholder="Email"> <br>
+      <input class="password input" type="password" placeholder="Password"> <br>
+      <a href="" class="createAccount">Create Account</a>
+      <p class="already">Already have an Account?, <a href="logIn.html" class="log">Log In</a><p>
     </div>
 
-    <footer></footer>
+    <!-- Footer -->
+    <footer>
+      <h2 class="dayspring">DAYSPRING TUTORS</h2>
+      <div class="bottomAnchors">
+        <a href="#" class="footerAnchor footerhome">Home</a>
+        <a href="#" class="footerAnchor">Courses</a>
+        <a href="#" class="footerAnchor">Past Questions</a>
+        <a href="#" class="footerAnchor">About</a>
+        <a href="#" class="footerAnchor">Help</a>
+        <a href="#" class="footerAnchor">Services</a>
+        <a href="#" class="footerAnchor">Forum</a>
+      </div>
+      <p class="copyright">© 2020 Dayspring Tutors. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Javascript -->
+    <script>
+      // NAVIGATION BAR - MOBILE VIEW
+      function myFunction10() {
+        var x = document.getElementById("myNavBar");
+        if (x.className === "navBar") {
+          x.className += " responsive";
+        } else {x.className = "navBar";}
+      }
+    </script>
   </body>
 </html>

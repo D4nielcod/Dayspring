@@ -3,22 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="Dayspring.css">
+    <link rel="stylesheet" href="logIn.css">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,500&family=Rubik:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-    <title>Home</title>
+    <title>Log In</title>
   </head>
-  
-  <body>
-    <!-- Go-to-Top Button -->
-    <a class="mytop" name="top"></a>
-    <a class="topButton" id="mytop" href="#top" title="Go to Top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
 
+  <body>
     <!-- Navigation Bar -->
+    <a href="#back" class="back" title="Go Back">Back</a>
     <div class="navBar" id="myNavBar">
       <a href="Dayspring.html" class="logo"></a>
       <a href="Dayspring.html" class="home anchor">Home</a>
@@ -34,67 +31,16 @@
       <a href="#services" class="services anchor">Services</a>
       <p class="divider">|</p>
       <a href="#forum" class="forum anchor">Forum</a>
-      <a href="#log" class="log anchor" onclick="myFunctiontoggle()">Log In</a>
-      <a href="logIn.html" class="log2 anchor">Log In</a>
-      <p class="divider">|</p>
-      <a href="signUp.html" class="sign anchor" title="Register with Us">Sign Up</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction10()"><i class="fa fa-bars"></i></a>
     </div>
 
-    <!-- Log In Box -->
-    <div class="loginBox" id="myloginBox">
-      <input class="email" type="email" placeholder="Email"> <br>
-      <input class="password" type="password" placeholder="Password"> <br>
-      <input class="box" type="checkbox"> <label class="remember">Remember Password</label> <br>
-      <a href="" class="login">Log In</a> <br>
-      <p class="agree"><a href="signUp.html" class="create">Create Account</a> | <a href="" class="create">Forgot Password?</a></p>
-    </div>
-
-    <!-- The Image -->
-    <div class="image">
-      <img class="pic" src="dayspring1.jpg" alt="file not found">
-      <div class="textjoin">
-        <a href= '#join' class="join" id='joinOne'>Join</a>
-        <p class="winning" id="winningOne">the Winning Students</p>
-        <p class="at" id="atOne">@</p>
-        <p class="day" id="dayOne">DAYSPRING</p>
-        <p class="tutors" id="tutorsOne">TUTORS</p>
-      </div>
-    </div>
-
-    <!-- The Cards -->
-    <div class="row">
-      <div class="column  cardone">
-        <div class="card">
-          <h3>Card 1</h3>
-          <p>Some text</p>
-          <p>Some text</p>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <h3>Card 2</h3>
-          <p>Some text</p>
-          <p>Some text</p>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <h3>Card 3</h3>
-          <p>Some text</p>
-          <p>Some text</p>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <h3>Card 4</h3>
-          <p>Some text</p>
-          <p>Some text</p>
-        </div>
-      </div>
+    <!-- Sign-Up Box -->
+    <div class="logInBox">
+      <p class="logIn">Log In</p>
+      <input class="username input" type="text" placeholder="Username / Email"> <br>
+      <input class="password input" type="password" placeholder="Password"> <br>
+      <a href="Dayspring.html" class="log">Log In</a>
+      <p class="dont">Don't have an Account?, <a href="signUp.html" class="sign">Sign Up</a>
     </div>
 
     <!-- Footer -->
@@ -112,6 +58,15 @@
       <p class="copyright">© 2020 Dayspring Tutors. All Rights Reserved.</p>
     </footer>
 
-    <script src="Dayspring.js"></script>
+    <!-- Javascript -->
+    <script>
+      // NAVIGATION BAR - MOBILE VIEW
+      function myFunction10() {
+        var x = document.getElementById("myNavBar");
+        if (x.className === "navBar") {
+          x.className += " responsive";
+        } else {x.className = "navBar";}
+      }
+    </script>
   </body>
 </html>

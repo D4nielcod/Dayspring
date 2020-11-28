@@ -123,7 +123,7 @@ function scrollFunction() {
   } else {mybutton.style.display = "none";}
 }
 
-// THE LOG IN BOX
+// THE LOG-IN BOX
 function myFunctiontoggle() {
   var x = document.getElementById("myloginBox");
   if (x.style.display === "none") {
