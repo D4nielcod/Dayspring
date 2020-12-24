@@ -1,136 +1,183 @@
 /* BASIC STYLING */
 *{box-sizing:border-box;}
 
-body{background-color:#e5fbfe; font-family:'Montserrat','Rubik',Arial; margin:0;}
+body{background-color:#E5FBFE; font-family:'Montserrat','Rubik',Arial; margin:0;}
 
 /* Go-to-Top Button */
-.mytop{display:none;}
+.mytop{display: block;}
 
-.topButton{background-color:inherit; border-radius:100px; bottom:20px; color:#00bfff; cursor:pointer; display:none; font-size:2.5rem; opacity:0.7; outline:none; padding:1px; position:fixed; right:1px; z-index:99;}
+.topButton{border-radius:100px; bottom:20px; color:#00BFFF; cursor:pointer; display:none; font-size:2.5rem; opacity:0.7; outline:none; padding:1px; position:fixed; right:1px; z-index:99;}
 .topButton:hover{opacity:1; transition:opacity 1s;}
 
 /* The Navigation Bar */
-.icon{display:none;}
+.icon, .log2{display:none;}
 
 a{display:inline;}
 a:active{cursor:progress;}
 
-.divider{color:#fff; display:inline;}
+.divider{color:#FFF; display:inline;}
 
-.navBar{background-color:#00bfff; height:50px; padding-top:15px; transition:padding-top 1s; width:100%;}
+.navBar{background-color:#00BFFF; height:50px; padding-top:15px; transition:padding-top 1s; width:100%;}
 .navBar:hover{height:55px; padding-top:17px; transition:height 1s; width:100%;}
 
-.anchor{background-color:inherit; border-radius:3px; color:#fff; font-size:115%; padding:7px 7px; text-decoration:none; transition:color 1s;}
+.anchor{border-radius:3px; color:#FFF; cursor:pointer; font-size:115%; padding:7px 7px; text-decoration:none; transition:color 1s;}
 .anchor:hover{color:#000080; transition:color 1s;}
-.anchor:active{color:#ff0000; transition:color 0.8s;}
+.anchor:active{color:#FF0000; transition:color 0.8s;}
 
-.logo{background-image: url('dummyLogo.jpg'); border-radius:30px; cursor:pointer; left:8%; padding:25px; position:absolute; top:0px;}
+.logo{background-image:url('dummyLogo.jpg'); border-radius:30px; cursor:pointer; left:8%; padding:25px; position:absolute; top:0px;}
 
 .home, .log{margin-left:16%;}
 
-.log2{display:none;}
-
 /* The Log-In Box */
-.loginBox{background-color:#00bfff; border:1px solid #000; border-radius:3px; display:none; height:auto; line-height:2%; margin-left:75%; position:absolute; text-align:center; width:25%;}
+.loginBox{background-color:#00BFFF; border:1px solid #000; border-radius:3px; display:none; height:auto; line-height:2%; margin-left:75%; padding:15px 0px; position:absolute; text-align:center; width:25%; z-index:3;}
 
-.email{background-color:#fff; border:none; border-radius:30px; color:#000080; font-size:100%; height:50px; margin-top:5%; padding-left:35px; width:80%;}
-
-.password{background-color:#fff; border:none; border-radius:30px; color:#000080; font-size:100%; height:50px; margin-top:5%; padding-left:35px; width:80%;}
+.input1{background-color:#FFF; border:none; border-radius:30px; color:#000080; font-size:100%; height:50px; margin-top:5%; padding-left:35px; width:80%;}
 
 .box{cursor:pointer; margin-left:40%; margin-top:3.1%;}
 
-.remember{color:#fff; font-size:70%; text-decoration:none;}
+.remember{color:#FFF; font-size:70%; text-decoration:none;}
 
-.login{background-color:#fff; border:1px solid; border-radius:30px; color:#00bfff; cursor:pointer; display:inline-block; font-size:100%; margin-top:2%; padding:20px 20px; text-decoration:none; transition:border 1s; transition:color 1s;}
-.login:hover{border:1px solid; color:#87ceeb; transition:border 1s; transition:color 1s;}
+.login, .createAccount{background-color:#FFF; border:1px solid; border-radius:30px; color:#00BFFF; cursor:pointer; display:inline-block; font-size:100%; margin-top:2%; padding:20px; text-decoration:none; transition:border 1s; transition:color 1s;}
+.login:hover, .createAccount{border:1px solid; color:#87CEEB; transition:border 1s; transition:color 1s;}
 
-.agree{color:#fff; font-size:85%; margin-top:6%;}
+.agree{color:#FFF; font-size:85%; margin-bottom:6%; margin-top:6%;}
 
-.create{color:#fff; margin-bottom:3%; text-decoration:none; transition:color 1s;}
-.create:hover{color:#87ceeb; transition:color 1s;}
+.create{color:#FFF; margin-bottom:3%; text-decoration:none; transition:color 1s;}
+.create:hover{color:#87CEEB; transition:color 1s;}
+
+/* Sign-Up Box */
+.signupBox{background-color:#00BFFF; border:1px solid #000; border-radius:3px; display:none; height:auto; line-height:2%; margin-left:70%; padding:10px 0px; position:absolute; text-align:center; width:30%; z-index:3;}
+
+.input2{background-color:#FFF; border:2px solid #87CEEB; border-radius:5px; font-size:130%; height:50px; margin-top:2%; padding-left:25px; text-decoration:none; width:80%;}
+
+.level{color:#00BFFF;}
+
+.agree{color:#FFF; font-size:85%; margin-top:2%;}
 
 /* The Image */
 .pic{height:650px; position:absolute; width:100%; z-index:-1;}
 
-.textjoin{background-color:inherit; color:#fff; font-size:3rem; height:700px; margin:0; padding-top:11%; text-align:center; width:100%;}
+.textjoin{background-color:inherit; color:#FFF; font-size:3rem; height:700px; margin:0; padding-top:11%; text-align:center; width:100%;}
 
 .join, .winning, .at, .day, .tutors{display:none;}
 
-.join1{background-color:inherit; color:#00bfff; display:inline; font-size:7rem; margin-bottom:1%; text-decoration:none; transition:color 1s;}
-.join1:hover, .join2:hover{color:#87ceeb; transition:color 1s;}
-.join2{background-color:inherit; color:#00bfff; font-size:7rem; margin-bottom:1%; text-decoration:underline; transition:color 1s;}
+.join1{background-color:inherit; color:#00BFFF; display:inline; font-size:7rem; margin-bottom:1%; text-decoration:none; transition:color 1s;}
+.join1:hover, .join2:hover{color:#87CEEB; transition:color 1s;}
+.join2{background-color:inherit; color:#00BFFF; font-size:7rem; margin-bottom:1%; text-decoration:underline; transition:color 1s;}
 
-.winning1{background-color:#ff0000; color:#fff; font-size:2rem; margin-bottom:0; margin-left:35%; margin-top:1%; padding-bottom:6px; width:29%;}
+.winning1{background-color:#FF0000; color:#FFF; font-size:2rem; margin-bottom:0; margin-left:35%; margin-top:1%; padding-bottom:6px; width:29%;}
 
-.at1{color:#00bfff; font-family:'Sansita Swashed',Arial; margin-bottom:0; margin-left:47%; margin-top:0; padding-bottom:6px; width:5%;}
+.at1{color:#00BFFF; font-family:'Sansita Swashed',Arial; margin-bottom:0; margin-left:47%; margin-top:0; padding-bottom:6px; width:5%;}
 
-.day1{background-color:#000080; color:#fff; font-family:'Secular One',Arial; margin-bottom:0; margin-left:42%; margin-top:0.5%; font-size:2rem; width:16%;}
+.day1{background-color:#000080; color:#FFF; font-family:'Secular One',Arial; margin-bottom:0; margin-left:42%; margin-top:0.5%; font-size:2rem; width:16%;}
 
-.tutors1{background-color:#000080; color:#fff; font-family:'Secular One',Arial; font-size:2rem; margin-bottom:0; margin-left:44%; margin-top:0.5%; width:12%;}
+.tutors1{background-color:#000080; color:#FFF; font-family:'Secular One',Arial; font-size:2rem; margin-bottom:0; margin-left:44%; margin-top:0.5%; width:12%;}
 
 /* The Cards */
-.column{float:left; margin-top:5%; padding:0 10px; width:25%;}
+.theCardS{padding-top:30px; text-align:center;}
+
+.service{color:#00BFFF; font-size:150%; padding:15px;}
+
+.column{float:left; margin-top:1.5%; padding:0 10px; width:25%;}
+
+.columnone{width:30%;}
 
 .row:after{clear:both; content:""; display:table;}
 
-.card{background-color:inherit; border:1px solid; border-radius:3px; color:#000; height:300px; padding:16px; text-align:center;}
+.card{background-color:inherit; border:1px solid; border-radius:3px; color:#000; height:auto; line-height:1.5; padding:16px; text-align:left;}
+
+.heading{margin-left:20%; margin-bottom:0;}
+
+li{margin-bottom:1%;}
 
 /* Footer */
-footer{background-color:#f2f2f2; color:#000; height:250px; margin-top:3%; width:100%; padding-top:20px;}
+footer{background-color:#F2F2F2; color:#000; height:250px; margin-top:3%; width:100%; padding-top:20px;}
 
-.dayspring{color:#00bfff; margin-bottom:3%; text-align:center;}
+.dayspring{color:#00BFFF; margin-bottom:3%; text-align:center;}
 
 .bottomAnchors{margin-bottom:2%;}
 
 .footerAnchor{color:#000080; margin-left:3%; text-decoration:none; transition:color 1s;}
-.footerAnchor:hover{color:#ff0000; transition:color 1s;}
-.footerAnchor:active{color:#00bfff; transition:color 1s;}
+.footerAnchor:hover{color:#FF0000; transition:color 1s;}
+.footerAnchor:active{color:#00BFFF; transition:color 1s;}
 
 .footerhome{margin-left:23%;}
 
 .copyright{margin-top:6%; text-align:center;}
 
 
-/* SMALLER SCREEN */
-@media screen and (max-width: 480px){
+/* OTHER VIEWS */
+@media screen and (max-width: 1300px) {
   /* The Navigation Bar */
   a{display:inline;}
 
-  .navBar a:not(:first-child), .divider, .navBar a.home, .log{display:none;}
+  .navBar a:not(:first-child), .divider, .navBar a.home, .log, .sign{display:none;}
 
   .navBar .icon, .image, .navBar{display:block;}
 
-  .navBar, .navBar:hover{height:50px; padding: 0;transition: width 0.9s;}
+  .navBar, .navBar:hover{padding:0; transition: width 0.9s;}
 
-  .anchor{background-color:#fff; border-radius:0; color:#000; float:left; height:50px; text-align:center;}
+  .navBar a.icon{padding-top:13px; text-align:center; text-decoration:none; width:15%;}
 
-  .navBar a.logo{left:8%; padding:24px; top:1.5px;}
+  .anchor{background-color:#FFF; border-radius:0; color:#000; float:left; height:50px; text-align:center;}
 
-  .navBar a.icon{background-color:#00bfff; color:#fff; display:block; float:left; font-size:150%; height:50px; margin-left:85%; padding-top:2.5%; text-align:center; text-decoration:none; width:15%;}
-  .navBar a.icon:hover{background-color:#fff; color:#000080; transition:background-color 1s; transition:color 1s;}
-  .navBar a.icon:active{color:#ff0000; transition:color 0.8s;}
+  .navBar a.logo{left:8%; padding:24px;}
+
+  .navBar a.icon{background-color:#00BFFF; color:#FFF; display:block; float:left; font-size:150%;}
+  .navBar a.icon:hover{background-color:#FFF; color:#000080; transition:background-color 1s; transition:color 1s;}
+  .navBar a.icon:active{color:#FF0000; transition:color 0.8s;}
 
   /* The Responsive Navigation Bar */
-  .navBar.responsive{background-color:#fff; margin-left:20%; position:relative; transition:width 1s; width:80%; z-index:3;}
+  .navBar.responsive{background-color:#F2F2F2; margin-left:20%; position:relative; transition:width 1s; width:80%; z-index:3;}
 
-  .navBar.responsive .icon{background-color:#f2f2f2; color:#000080; font-size:150%; height:50px; padding-top:3%; position:absolute; right:0; text-align:center; top:0; width:20%;}
-  .navBar.responsive .icon:hover{background-color:#00bfff; color:#fff; transition:background-color 1s; transition:color 1s;}
-  .navBar.responsive .icon:active{background-color:#fff; color:#ff0000; transition:background-color 0.8s; transition:color 0.8s;}
+  .navBar.responsive .icon{background-color:#F2F2F2; color:#000080; font-size:150%; position:absolute; right:0; text-align:center; top:0;}
+  .navBar.responsive .icon:hover{background-color:#00BFFF; color:#FFF; transition:background-color 1s; transition:color 1s;}
+  .navBar.responsive .icon:active{background-color:#FFF; color:#FF0000; transition:background-color 0.8s; transition:color 0.8s;}
 
-  .navBar.responsive .anchor{color:#000080; display:block; float:none; font-size:130%; height:70px; padding-right:7%; padding-top:6%; text-align:right;}
-  .navBar.responsive .anchor:hover{background-color:#00bfff; color:#fff; transition:background-color 1s; transition:color 1s;}
-  .navBar.responsive .anchor:active{background-color:#fff; color:#ff0000; transition:background-color 0.8s; transition:color 0.8s;}
+  .navBar.responsive .anchor{color:#000080; display:block; float:none; font-size:130%; height:70px; text-align:right;}
+  .navBar.responsive .anchor:hover{background-color:#00BFFF; color:#FFF; transition:background-color 1s; transition:color 1s;}
+  .navBar.responsive .anchor:active{background-color:#FFF; color:#FF0000; transition:background-color 0.8s; transition:color 0.8s;}
 
-  .navBar.responsive .log{display:none;}
+  .navBar.responsive .log, .navBar.responsive .sign{display:none;}
 
-  .navBar.responsive .log2, .navBar.responsive .sign{border:none; display:block; float:none; margin:0; height:70px; padding-top:5%;}
+  .navBar.responsive .log2{border:none; display:block; float:none;}
+
+  .navBar.responsive .home, .navBar.responsive .home:hover{background-color:#F2F2F2; color:#F2F2F2;}
+
+  /* The Image */
+  .pic{height:auto;}
+
+  /* The Cards */
+  .theCardS{margin-top:30%;}
+
+  .column{display:block; margin-bottom:0; width:100%;}
+}
+
+
+/* SMALLER SCREEN */
+@media screen and (max-width: 480px){
+  /* The Navigation Bar */
+  .navBar, .navBar:hover{height:55px;}
+
+  .navBar a.logo{top:4px;}
+
+  .navBar a.icon{height:55px; margin-left:85%;}
+
+  /* The Responsive Navigation Bar */
+  .navBar.responsive{height:55px; margin-left:20%; position:relative; transition:width 1s; width:80%; z-index:3;}
+
+  .navBar.responsive .icon{background-color:#F2F2F2; color:#000080; font-size:150%; height:55px; padding-top:13px; position:absolute; right:0; text-align:center; top:0; width:20%;}
+
+  .navBar.responsive .anchor{padding-right:7%; padding-top:6%;}
+
+  .navBar.responsive .log2{height:70px; margin:0; padding-top:5%;}
 
   .navBar.responsive .logo, .navBar.responsive .logo:hover{margin-left:-30%;}
 
-  .navBar.responsive .home, .navBar.responsive .home:hover{background-color:#f2f2f2; color:#f2f2f2; height:50px; margin-left:-50%;}
+  .navBar.responsive .home, .navBar.responsive .home:hover{height:55px; margin-left:-50%;}
 
   /* The Image */
-  .pic{height:auto; top:10.5%;}
+  .pic{top:11.5%;}
 
   .textjoin{height:300px; padding-top:12%;}
 
@@ -147,9 +194,9 @@ footer{background-color:#f2f2f2; color:#000; height:250px; margin-top:3%; width:
   .tutors1{font-size:1rem; margin-left:35%; margin-top:1%; width:28%;}
 
   /* The Cards */
-  .column{display:block; margin-bottom:0; width:100%;}
+  .theCardS{margin-top:15%; padding-top:30px; text-align:center;}
 
-  .cardone{margin-top:30%;}
+  .column{display:block; margin-bottom:0; width:100%;}
 
   /* Footer */
   footer{height:300px; margin-top:5%; padding-top:3px;}
@@ -165,43 +212,27 @@ footer{background-color:#f2f2f2; color:#000; height:250px; margin-top:3%; width:
 /* SMALL SCREEN */
 @media screen and (min-width: 480px) and (max-width: 700px) {
   /* The Navigation Bar */
-  a{display:inline;}
+  .navBar, .navBar:hover{height:55px;}
 
-  .navBar a:not(:first-child), .divider, .navBar a.home, .log{display:none;}
+  .navBar a.logo{top:4px;}
 
-  .navBar .icon, .image, .navBar{display:block;}
-
-  .navBar, .navBar:hover{height:55px; padding:0; transition:width 0.9s;}
-
-  .anchor{background-color:#fff; border-radius:0; color:#000; float:left; height:50px; text-align:center;}
-
-  .navBar a.logo{left:8%; padding:24px; top:4px;}
-
-  .navBar a.icon{background-color:#00bfff; color:#fff; display:block; float:left; font-size:150%; height:55px; margin-left:85%; padding-top:13px; text-align:center; text-decoration:none; width:15%;}
-  .navBar a.icon:hover{background-color:#fff; color:#000080; transition:background-color 1s; transition:color 1s;}
-  .navBar a.icon:active{color:#ff0000; transition:color 0.8s;}
+  .navBar a.icon{height:55px; margin-left:85%;}
 
   /* The Responsive Navigation Bar */
-  .navBar.responsive{background-color:#fff; height:55px; margin-left:20%; position:relative; transition:width 1s; width:80%; z-index:3;}
+  .navBar.responsive{height:55px; margin-left:20%; position:relative; transition:width 1s; width:80%; z-index:3;}
 
-  .navBar.responsive .icon{background-color:#f2f2f2; color:#000080; font-size:150%; height:55px; padding-top:13px; position:absolute; right:0; text-align:center; top:0; width:20%;}
-  .navBar.responsive .icon:hover{background-color:#00bfff; color:#fff; transition:background-color 1s; transition:color 1s;}
-  .navBar.responsive .icon:active{background-color:#fff; color:#ff0000; transition:background-color 0.8s; transition:color 0.8s;}
+  .navBar.responsive .icon{height:55px; padding-top:13px; width:20%;}
 
-  .navBar.responsive .anchor{color:#000080; display:block; float:none; font-size:130%; height:70px; padding-right:7%; padding-top:6%; text-align:right;}
-  .navBar.responsive .anchor:hover{background-color:#00bfff; color:#fff; transition:background-color 1s; transition:color 1s;}
-  .navBar.responsive .anchor:active{background-color:#fff; color:#ff0000; transition:background-color 0.8s; transition:color 0.8s;}
+  .navBar.responsive .anchor{padding-right:7%; padding-top:6%;}
 
-  .navBar.responsive .log{display:none;}
-
-  .navBar.responsive .log2, .navBar.responsive .sign{border:none; display:block; float:none; height:70px; margin:0; padding-top:5%;}
+  .navBar.responsive .log2{height:70px; margin:0; padding-top:5%;}
 
   .navBar.responsive .logo, .navBar.responsive .logo:hover{margin-left:-25%;}
 
-  .navBar.responsive .home, .navBar.responsive .home:hover{background-color:#f2f2f2; color:#f2f2f2; height:55px; margin-left:-50%;}
+  .navBar.responsive .home, .navBar.responsive .home:hover{height:55px; margin-left:-50%;}
 
   /* The Image */
-  .pic{height:auto; top:9.9%;}
+  .pic{top:9.9%;}
 
   .textjoin{height:300px; padding-top:10%;}
 
@@ -217,13 +248,8 @@ footer{background-color:#f2f2f2; color:#000; height:250px; margin-top:3%; width:
 
   .tutors1{font-size:50%; margin-left:35%; margin-top:1%; width:28%;}
 
-  /* The Cards */
-  .column{display:block; margin-bottom:0; width:100%;}
-
-  .cardone{margin-top:30%;}
-
   /* Footer */
-  footer{height:420px; margin-top:5%; padding-top:2px;}
+  footer{height:420px;}
 
   .dayspring{margin-left:60px; text-align:left;}
 
@@ -238,43 +264,27 @@ footer{background-color:#f2f2f2; color:#000; height:250px; margin-top:3%; width:
 /* TABLET SCREEN */
 @media screen and (min-width: 700px) and (max-width: 1300px){
   /* The Navigation Bar */
-  a{display:inline;}
+  .navBar, .navBar:hover{height:55px;}
 
-  .navBar a:not(:first-child), .divider, .log, .navBar a.home{display:none;}
+  .navBar a.logo{top:2px;}
 
-  .navBar .icon, .image, .navBar{display:block;}
-
-  .navBar, .navBar:hover{height:55px; padding:0; transition:width 0.1s;}
-
-  .anchor{background-color:#fff; border-radius:0; color:#000; float:left; height:50px; text-align:center;}
-
-  .navBar a.logo{left:8%; padding:25px; top:2px;}
-
-  .navBar a.icon{background-color:#00bfff; color:#fff; display:block; float:left; font-size:150%; height:55px; margin-left:90%; padding-top:13px; text-align:center; text-decoration:none; width:10%;}
-  .navBar a.icon:hover{background-color:#fff; color:#000080; transition:background-color 1s; transition:color 1s;}
-  .navBar a.icon:active{color:#ff0000; transition:color 0.8s;}
+  .navBar a.icon{height:55px; margin-left:90%; width:10%;}
 
   /* The Responsive Navigation Bar */
-  .navBar.responsive{background-color:#f2f2f2; margin-left:20%; height:55px; position:relative; transition:width 1s; width:80%; z-index:3;}
+  .navBar.responsive{margin-left:20%; height:55px; position:relative; transition:width 1s; width:80%; z-index:3;}
 
-  .navBar.responsive .icon{background-color:#f2f2f2; color:#000080; font-size:150%; height:55px; padding-top:13px; position:absolute; right:0; text-align:center; top:0; width:13%;}
-  .navBar.responsive .icon:hover{background-color:#00bfff; color:#fff; transition:background-color 1s; transition:color 1s;}
-  .navBar.responsive .icon:active{background-color:#fff; color:#ff0000; transition:background-color 0.8s; transition:color 0.8s;}
+  .navBar.responsive .icon{height:55px; padding-top:13px; width:13%;}
 
-  .navBar.responsive .anchor{color:#000080; display:block; float:none; font-size:130%; height:70px; padding-top:3%; padding-right:5%; text-align:right;}
-  .navBar.responsive .anchor:hover{background-color:#00bfff; color:#fff; transition:background-color 1s; transition:color 1s;}
-  .navBar.responsive .anchor:active{background-color:#fff; color:#ff0000; transition:background-color 0.8s; transition:color 0.8s;}
+  .navBar.responsive .anchor{padding-top:3%; padding-right:5%;}
 
-  .navBar.responsive .log{display:none;}
-
-  .navBar.responsive .log2, .navBar.responsive .sign{border:none; display:block; float:none; height:70px; margin:0; padding-top:2%;}
+  .navBar.responsive .log2{height:70px; margin:0; padding-top:2%;}
 
   .navBar.responsive .logo, .navBar.responsive .logo:hover{margin-left:-25%;}
 
-  .navBar.responsive .home, .navBar.responsive .home:hover{background-color:#f2f2f2; color:#f2f2f2; height:55px; margin-left:-50%;}
+  .navBar.responsive .home, .navBar.responsive .home:hover{height:55px; margin-left:-50%;}
 
   /* The Image */
-  .pic{height:auto; top:9.9%;}
+  .pic{top:9.9%;}
 
   .textjoin{height:300px; padding-top:13%; text-align:center;}
 
@@ -291,9 +301,7 @@ footer{background-color:#f2f2f2; color:#000; height:250px; margin-top:3%; width:
   .tutors1{font-size:60%; margin-left:40%; margin-top:1%; width:21%;}
 
   /* The Cards */
-  .column{display:block; margin-bottom:3%; width:100%;}
-
-  .cardone{margin-top:45%;}
+  .theCardS{margin-top:45%;}
 
   /* Footer */
   footer{height:200px; margin-top:3%; padding-top:20px;}

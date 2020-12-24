@@ -4,8 +4,6 @@
 body{background-color:#e5fbfe; font-family:'Montserrat','Rubik',Arial; margin:0;}
 
 /* Navigation Bar */
-.back{background-color:#87ceeb; color:#fff; border:none; border-radius:30px; left:2%; padding:7px; position:absolute; text-decoration:none; top:10px;}
-
 .icon{display:none;}
 
 a{display:inline;}

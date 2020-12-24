@@ -4,8 +4,6 @@
 body{background-color:#fff; font-family:'Montserrat','Rubik',Arial;}
 
 /* Navigation Bar */
-.back{background-color:#87ceeb; color:#fff; border:none; border-radius:30px; left:2%; padding:7px; position:absolute; text-decoration:none; top:10px;}
-
 .icon{display:none;}
 
 a{display:inline;}
@@ -76,7 +74,7 @@ footer{background-color:#f2f2f2; color:#000; height:190px; margin-top:3%; width:
   .navBar a.icon:hover{background-color:#fff; color:#000080; transition:background-color 1s; transition:color 1s;}
   .navBar a.icon:active{color:#ff0000; transition:color 0.8s;}
 
-  /* The Responsive Navigation Bar */
+  /* Responsive Navigation Bar */
   .navBar.responsive{background-color:#fff; margin-left:20%; position:relative; transition:width 1s; width:80%; z-index:3;}
 
   .navBar.responsive .icon{background-color:#f2f2f2; color:#000080; font-size:150%; height:50px; padding-top:3%; position:absolute; right:0; text-align:center; top:0; width:20%;}
@@ -115,6 +113,7 @@ footer{background-color:#f2f2f2; color:#000; height:190px; margin-top:3%; width:
 
 /* SMALL SCREEN */
 @media screen and (min-width:480px) and (max-width:700px){
+  /* Navigation Bar */
   a{display:inline;}
 
   .navBar a:not(:first-child), .divider, .navBar a.home{display:none;}
@@ -131,7 +130,7 @@ footer{background-color:#f2f2f2; color:#000; height:190px; margin-top:3%; width:
   .navBar a.icon:hover{background-color:#fff; color:#000080; transition:background-color 1s; transition:color 1s;}
   .navBar a.icon:active{color:#ff0000; transition:color 0.8s;}
 
-  /* The Responsive Navigation Bar */
+  /* Responsive Navigation Bar */
   .navBar.responsive{background-color:#fff; height:55px; margin-left:20%; position:relative; transition:width 1s; width:80%; z-index:3;}
 
   .navBar.responsive .icon{background-color:#f2f2f2; color:#000080; font-size:150%; height:55px; padding-top:13px; position:absolute; right:0; text-align:center; top:0; width:20%;}
@@ -172,7 +171,7 @@ footer{background-color:#f2f2f2; color:#000; height:190px; margin-top:3%; width:
 
 /* TABLET SCREEN */
 @media screen and (min-width:700px) and (max-width:1300px){
-  /* The Navigation Bar */
+  /* Navigation Bar */
   a{display:inline;}
 
   .navBar a:not(:first-child), .divider, .navBar a.home{display:none;}
@@ -189,7 +188,7 @@ footer{background-color:#f2f2f2; color:#000; height:190px; margin-top:3%; width:
   .navBar a.icon:hover{background-color:#fff; color:#000080; transition:background-color 1s; transition:color 1s;}
   .navBar a.icon:active{color:#ff0000; transition:color 0.8s;}
 
-  /* The Responsive Navigation Bar */
+  /* Responsive Navigation Bar */
   .navBar.responsive{background-color:#f2f2f2; margin-left:20%; height:55px; position:relative; transition:width 1s; width:80%; z-index:3;}
 
   .navBar.responsive .icon{background-color:#f2f2f2; color:#000080; font-size:150%; height:55px; padding-top:13px; position:absolute; right:0; text-align:center; top:0; width:13%;}

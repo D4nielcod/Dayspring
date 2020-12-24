@@ -11,15 +11,15 @@ imageChangere('.pic')
 
 function imageChangere (classname){
   var imageGotten = document.querySelector(classname);
-  imageArray = ['dayspring1.jpg','dayspring2.jpg','dayspring3.jpg','dayspring4.jpg','dayspring5.jpg','dayspring6.jpg'];
+  imageArray = ['dayspring1.jpg','dayspring2.jpg','dayspring3.jpg'];
   var imageIndex = 0;
 
   function imageChanger() {
-    if (imageIndex < 5) {imageIndex++;
+    if (imageIndex < 2) {imageIndex++;
       imageGotten.src = imageArray[imageIndex];
       }
 
-    else if (imageIndex = 5){imageIndex = 0;
+    else if (imageIndex = 2){imageIndex = 0;
       imageGotten.src = imageArray[imageIndex];
       }
   }
@@ -129,4 +129,35 @@ function myFunctiontoggle() {
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {x.style.display = "none";}
+
+  var y = document.getElementById("mysignupbox");
+  if (y.style.display === "block") {
+    y.style.display = "none";
+  }
+}
+
+// THE SIGN-UP BOX
+function myFunctiontoggle2() {
+  var y = document.getElementById("mysignupbox");
+  if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {y.style.display = "none";}
+
+  var x = document.getElementById("myloginBox");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  }
+}
+
+// THE IMAGE
+function functionnobox() {
+  var a = document.getElementById("mysignupbox");
+  if (a.style.display === "block") {
+    a.style.display = "none";
+  }
+
+  var b = document.getElementById("myloginBox");
+  if (b.style.display === "block") {
+    b.style.display = "none";
+  }
 }
