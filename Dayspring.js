@@ -123,29 +123,16 @@ function scrollFunction() {
   } else {mybutton.style.display = "none";}
 }
 
-// THE LOG-IN BOX
-function myFunctiontoggle() {
-  var x = document.getElementById("myloginBox");
+// THE LOG-IN BOX & THE SIGN-UP BOX
+function myFunctiontoggle(idname,boxname) {
+  var x = document.getElementById(idname);
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {x.style.display = "none";}
 
-  var y = document.getElementById("mysignupbox");
+  var y = document.getElementById(boxname);
   if (y.style.display === "block") {
     y.style.display = "none";
-  }
-}
-
-// THE SIGN-UP BOX
-function myFunctiontoggle2() {
-  var y = document.getElementById("mysignupbox");
-  if (y.style.display === "none") {
-    y.style.display = "block";
-  } else {y.style.display = "none";}
-
-  var x = document.getElementById("myloginBox");
-  if (x.style.display === "block") {
-    x.style.display = "none";
   }
 }
 

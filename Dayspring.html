@@ -34,10 +34,10 @@
       <a href="#service" class="services anchor">Services</a>
       <p class="divider">|</p>
       <a href="#forum" class="forum anchor">Forum</a>
-      <a class="log anchor" onclick="myFunctiontoggle()">Log In</a>
+      <a class="log anchor" onclick="myFunctiontoggle('myloginBox','mysignupbox')">Log In</a>
       <a href="logIn.html" class="log2 anchor">Log In</a>
       <p class="divider">|</p>
-      <a class="sign anchor" onclick="myFunctiontoggle2()" title="Register with Us">Sign Up</a>
+      <a class="sign anchor" onclick="myFunctiontoggle('mysignupbox','myloginBox')" title="Register with Us">Sign Up</a>
       <a href="signUp.html" class="log2 anchor">Sign Up</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction10()"><i class="fa fa-bars"></i></a>
     </div>
@@ -80,26 +80,29 @@
     </div>
 
     <!-- The Cards -->
-    <div class="theCardS">
+    <div class="theCards">
       <a name="service" class="service">SERVICES WE OFFER</a>
       <div class="row">
         <div class="column columnone">
           <div class="card">
             <h3 class="heading"><b>DIGITAL TRAINING</b></h3>
             <ul>
-              <li>Graphic Design & UI/UX designs</li>
+              <li>Graphic Design & UI/UX Designs</li>
               <li>Python Programming</li>
-              <li>Web & Android development</li>
-              <li>Embedded system</li>
-              <li>Data science & Machine Learning...</li>
-
+              <li>Web & Android Development</li>
+              <li>Embedded System</li>
+              <li>Data Science & Machine Learning...</li>
+            </ul>
           </div>
         </div>
 
-        <div class="column">
-          <div class="card">
-            <h3><b>ACADEMIC TUTORING</b></h3>
-            </ul>
+        <div class="column columntwo">
+          <div class="card cardtwo">
+            <table>
+              <th><h3><b>ACADEMIC TUTORING</b></h3></th>
+              <tr><td class="part1"><h4>Part One</h4></td> <td class="part2"><h4>Part Two</h4></td></tr>
+              <tr><td class="part1"><ul><li>MTH101/MTH102/MTH104</li> <li>CHM101/CHM102</li> <li>PHY101/PHY102</li> <li>MTH105/MTH106</li> <li>SSC105/SSC106</li></ul></td> <td class="part2"><ul><li>MTH201/MTH202</li> <li>MEE205/MEE206</li> <li>CSC201/CSC202</li> <li>EEE201/EEE202</li> <li>CHM201/CHM202</li></ul></td></tr>
+            </table>
           </div>
         </div>
 
@@ -107,14 +110,12 @@
           <div class="card">
             <h3>Card 3</h3>
             <p>Some text</p>
-            <p>Some text</p>
           </div>
         </div>
 
         <div class="column">
           <div class="card">
             <h3>Card 4</h3>
-            <p>Some text</p>
             <p>Some text</p>
           </div>
         </div>
