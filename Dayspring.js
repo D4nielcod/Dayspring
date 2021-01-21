@@ -148,3 +148,40 @@ function functionnobox() {
     b.style.display = "none";
   }
 }
+
+// The HEADINGS
+// First Heading
+function underlineHeading1() {
+  var x = document.getElementById('myheading1');
+
+  if (x.classList.contains("heading1")) {
+    x.classList.replace("heading1", "heading2");
+  } else if (x.classList.contains("heading2")) {
+    x.classList.replace("heading2", "heading1");
+  }
+}
+setInterval(underlineHeading1,1000);
+
+// Second Heading
+function underlineHeading2() {
+  var y = document.getElementById('myheading2');
+
+  if (y.classList.contains("heading1")) {
+    y.classList.replace("heading1", "heading2");
+  } else if (y.classList.contains("heading2")) {
+    y.classList.replace("heading2", "heading1");
+  }
+}
+setInterval(underlineHeading2,1000);
+
+// Third Heading
+function underlineHeading3() {
+  var y = document.getElementById('myheading3');
+
+  if (y.classList.contains("heading1")) {
+    y.classList.replace("heading1", "heading2");
+  } else if (y.classList.contains("heading2")) {
+    y.classList.replace("heading2", "heading1");
+  }
+}
+setInterval(underlineHeading3,1000);
